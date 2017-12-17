@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基于Vue实现实时时间转换指令</title>
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <div v-time="timeNow"></div>
+        <div v-time="timeBefore"></div>
+        <div v-birthday="birthday"></div>
+    </div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<!-- 注册的自定义事件要在vue实例化前面引入 -->
+<script src="js/time.js"></script>
+<script src="js/index.js"></script>
+
+</html>
