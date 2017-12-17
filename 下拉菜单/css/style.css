@@ -1,0 +1,43 @@
+[v-cloak] {
+    display: none;
+}
+
+.wrapper {
+    width: 125px;
+}
+
+.wrapper button {
+    display: block;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    background-color: #39f;
+    border: 0;
+    padding: 6px;
+    text-align: center;
+    border-radius: 4px;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* 使按钮点击有一个沉入效果 */
+
+.wrapper button:active {
+    top: 1px;
+    left: 1px;
+}
+
+.wrapper .menu {
+    height: 150px;
+    padding: 4px;
+    margin: 5px 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px #ccc;
+    font-style: 12px;
+}

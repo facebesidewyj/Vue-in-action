@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <template v-if="type === 'name'">
+            <label for="username">用户名:</label>
+            <input id="username" type="text" placeholder="用户名">
+        </template>
+        <template v-else>
+            <label for="email">邮箱:</label>
+            <input id="email" type="text" placeholder="邮箱">
+        </template>
+        <button @click="toggleInput">切换输入类型</button>
+    </div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<script>
+var app = new Vue({
+    el: '#app',
+    data: {
+        type: 'name'
+    },
+    methods: {
+        toggleInput() {
+            if (this.type === 'name') {
+                this.type = 'email';
+            } else {
+                this.type = 'name';
+            }
+        }
+    }
+});
+</script>
+
+</html>

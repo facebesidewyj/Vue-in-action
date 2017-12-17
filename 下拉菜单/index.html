@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基于Vue实现的可从外部关闭的下拉菜单示例</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <div class="wrapper" v-clickoutside="closeMenu">
+            <button @click="toggleMenu">点击显示下拉菜单</button>
+            <div class="menu" v-show="showMenu">下拉框的内容，点击外面区域可以关闭</div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<!-- 注册的自定义事件要在vue实例化前面引入 -->
+<script src="js/clickOutSide.js"></script>
+<script src="js/index.js"></script>
+
+</html>

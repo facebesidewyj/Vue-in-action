@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基于Vue实现数字输入框组件</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <input-number :min="0" :max="100" v-model.trim="value"></input-number>
+    </div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<script src="js/inputNumber.js"></script>
+<script src="js/index.js"></script>
+
+</html>

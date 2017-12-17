@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基于Vue的标签页组件</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <tabs v-model="activeKey">
+            <pane label="标签一" name="1">
+                标签一的内容
+            </pane>
+            <pane label="标签二" name="2">
+                标签二的内容
+            </pane>
+            <pane label="标签三" name="3">
+                标签三的内容
+            </pane>
+        </tabs>
+    </div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<script src="js/pane.js"></script>
+<script src="js/tab.js"></script>
+<script>
+var app = new Vue({
+    el: '#app',
+    data: {
+        activeKey: '1'
+    }
+});
+</script>
+
+</html>
